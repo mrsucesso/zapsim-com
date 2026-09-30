@@ -232,3 +232,19 @@ p { margin: 0; }
   .section { padding: 64px 0; }
   .hero { padding: 48px 0 64px; }
 }
+.plans.plans-3 { grid-template-columns: repeat(3, 1fr); max-width: 1120px; }
+@media (max-width: 980px) { .plans.plans-3 { grid-template-columns: 1fr; max-width: 520px; } }
+.plans-3 .price small { display: block; margin-top: 8px; font-size: 14px; }
+
+/* Destaques do topo */
+.hl { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.hl-item { display: flex; flex-direction: column; gap: 2px; padding: 12px 16px; border-radius: 14px; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow); min-width: 220px; }
+.hl-item b { color: var(--ink); font-size: 16px; }
+.hl-item span { color: var(--muted); font-size: 14px; }
+.hl-item.pro { background: var(--green); border-color: var(--green); }
+.hl-item.pro b, .hl-item.pro span { color: #fff; }
+
+.site-footer .wrap { grid-template-columns: 1.3fr 1fr 1fr 1.2fr; }
+@media (max-width: 900px) { .site-footer .wrap { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .site-footer .wrap { grid-template-columns: 1fr; } }
+.site-footer .legal a { color: var(--green); }
