@@ -9,28 +9,28 @@
     <meta name="author" content="ZapSim">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://zapsim.com/">
-    
+
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zapsim.com/">
     <meta property="og:site_name" content="ZapSim">
     <meta property="og:title" content="ZapSim - Atendimento Automatizado pelo WhatsApp com Toque Humano">
     <meta property="og:description" content="Automatize seu atendimento pelo WhatsApp sem parecer robô. Chatbot inteligente, multi-atendentes, CRM integrado. Planos a partir de R$ 89/mês. 30 dias de garantia!">
-    <meta property="og:image" content="https://zapsim.com/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image" content="https://zapsim.com/brand/zapsim-square.png">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1080">
     <meta property="og:locale" content="pt_BR">
-    
+
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="ZapSim - Atendimento Automatizado pelo WhatsApp">
     <meta name="twitter:description" content="Chatbot inteligente para WhatsApp. Multi-atendentes, CRM integrado. A partir de R$ 89/mês.">
-    <meta name="twitter:image" content="https://zapsim.com/og-image.jpg">
-    
+    <meta name="twitter:image" content="https://zapsim.com/brand/zapsim-square.png">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo-icon.png">
-    <link rel="apple-touch-icon" href="logo-icon.png">
-    
+
+
+
     <!-- Structured Data / Schema.org -->
     <script type="application/ld+json">
     {
@@ -42,7 +42,7 @@
           "name": "ZapSim",
           "legalName": "Sucesso Empresarial Ltda",
           "url": "https://zapsim.com/",
-          "logo": "https://zapsim.com/logo.png",
+          "logo": "https://zapsim.com/brand/zapsim-square.png",
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+55-27-3190-1980",
@@ -77,25 +77,25 @@
       ]
     }
     </script>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             color: #333;
         }
-        
+
         .bg-green-dark {
             position: relative;
             background-image: url('hero-bg.jpg');
@@ -103,7 +103,7 @@
             background-position: center;
             background-repeat: no-repeat;
         }
-        
+
         .bg-green-dark::before {
             content: '';
             position: absolute;
@@ -114,7 +114,7 @@
             background: linear-gradient(135deg, rgba(10, 77, 46, 0.70) 0%, rgba(24, 99, 65, 0.60) 100%);
             z-index: 1;
         }
-        
+
         .bg-green-pattern {
             position: relative;
             background-image: url('bkg-1.jpg');
@@ -122,7 +122,7 @@
             background-position: center;
             background-repeat: no-repeat;
         }
-        
+
         .bg-green-pattern::before {
             content: '';
             position: absolute;
@@ -133,11 +133,11 @@
             background: linear-gradient(135deg, rgba(10, 77, 46, 0.92) 0%, rgba(24, 99, 65, 0.88) 100%);
             z-index: 1;
         }
-        
+
         .bg-green-light {
             background: #25D366;
         }
-        
+
         .btn-primary {
             background: #25D366;
             color: white;
@@ -149,13 +149,13 @@
             transition: all 0.3s ease;
             border: 2px solid transparent;
         }
-        
+
         .btn-primary:hover {
             background: #20BA5A;
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
         }
-        
+
         .btn-outline {
             background: transparent;
             color: white;
@@ -167,12 +167,12 @@
             transition: all 0.3s ease;
             border: 2px solid white;
         }
-        
+
         .btn-outline:hover {
             background: white;
             color: #0a4d2e;
         }
-        
+
         .card {
             background: linear-gradient(145deg, #c8e6c9 0%, #e8f5e9 100%);
             padding: 28px;
@@ -181,13 +181,13 @@
             transition: all 0.3s ease;
             border: 1px solid rgba(37, 211, 102, 0.2);
         }
-        
+
         .card:hover {
             transform: translateY(-6px);
             box-shadow: 0 12px 40px rgba(37, 211, 102, 0.15);
             border-color: rgba(37, 211, 102, 0.3);
         }
-        
+
         .mini-card {
             background: linear-gradient(145deg, #ffffff 0%, #f0fdf4 100%);
             border-radius: 12px;
@@ -196,11 +196,11 @@
             border-left: 3px solid #25D366;
             cursor: pointer;
         }
-        
+
         .mini-card:hover {
             box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
         }
-        
+
         .mini-card summary {
             padding: 16px 20px;
             list-style: none;
@@ -208,26 +208,26 @@
             align-items: center;
             justify-content: space-between;
         }
-        
+
         .mini-card summary::-webkit-details-marker {
             display: none;
         }
-        
+
         .mini-card[open] {
             border-left-width: 4px;
         }
-        
+
         .mini-card p {
             padding: 0 20px 16px 20px;
             color: #666;
             font-size: 0.875rem;
             line-height: 1.5;
         }
-        
+
         .mini-card .fa-chevron-down {
             transition: transform 0.3s ease;
         }
-        
+
         .pricing-card {
             background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
             padding: 36px;
@@ -237,19 +237,19 @@
             border: 2px solid rgba(37, 211, 102, 0.1);
             transition: all 0.3s ease;
         }
-        
+
         .pricing-card:hover {
             border-color: #25D366;
             transform: translateY(-4px);
             box-shadow: 0 12px 40px rgba(37, 211, 102, 0.15);
         }
-        
+
         .pricing-card.featured {
             border: 2px solid #25D366;
             transform: scale(1.05);
             background: linear-gradient(145deg, #ffffff 0%, #f0fdf4 100%);
         }
-        
+
         .badge {
             background: #25D366;
             color: white;
@@ -262,7 +262,7 @@
             left: 50%;
             transform: translateX(-50%);
         }
-        
+
         header {
             position: sticky;
             top: 0;
@@ -270,21 +270,21 @@
             background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
+
         section {
             padding: 80px 0;
         }
-        
+
         section:not(.bg-green-dark):not(.bg-green-pattern) {
             margin-bottom: 20px;
         }
-        
+
         h2 {
             font-size: 38px;
             font-weight: 800;
             margin-bottom: 16px;
         }
-        
+
         @media (max-width: 768px) {
             h2 {
                 font-size: 28px;
@@ -294,36 +294,10 @@
             }
         }
     </style>
-</head>
+<link rel="stylesheet" href="/site-chrome.css"><link rel="icon" type="image/png" href="/brand/zapsim-icon.png"><link rel="apple-touch-icon" href="/brand/zapsim-icon.png"></head>
 <body>
     <!-- Header Fixo -->
-    <header>
-        <div class="container mx-auto px-6 py-2">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-3">
-                    <img src="logo-icon.png" alt="ZapSim" class="h-10">
-                    <span class="text-2xl font-bold text-green-800">ZapSim</span>
-                </div>
-                
-                <nav class="hidden md:flex items-center space-x-6">
-                    <a href="#funcionalidades" class="text-green-900 hover:text-green-600 font-medium transition text-sm">Funcionalidades</a>
-                    <a href="/chatbot-whatsapp/" class="text-green-900 hover:text-green-600 font-medium transition text-sm">Chatbot WhatsApp</a>
-                    <a href="/crm-whatsapp/" class="text-green-900 hover:text-green-600 font-medium transition text-sm">CRM WhatsApp</a>
-                    <a href="/atendimento-multicanal/" class="text-green-900 hover:text-green-600 font-medium transition text-sm">Multicanal</a>
-                    <a href="/planos/" class="text-green-900 hover:text-green-600 font-medium transition text-sm">Planos</a>
-                    <a href="#faq" class="text-green-900 hover:text-green-600 font-medium transition text-sm">FAQ</a>
-                    <a href="/informacoes-oficiais/" class="text-green-900 hover:text-green-600 font-medium transition text-sm">Informações oficiais</a>
-                    <a href="https://meu.zapsim.app" target="_blank" class="bg-green-600 text-white px-3 py-1.5 rounded-lg hover:bg-green-700 transition text-xs font-semibold">
-                        <i class="fas fa-user mr-1 text-xs"></i>Área do Cliente
-                    </a>
-                </nav>
-                
-                <button class="md:hidden text-green-900">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+    <header class="site-header"><div class="site-bar"><a class="site-brand" href="/" aria-label="ZapSim — início"><img src="/brand/zapsim-horizontal.png" alt="ZapSim" width="1080" height="350"></a><nav class="site-navigation" aria-label="Navegação principal"><a href="/#funcionalidades">Funcionalidades</a><a href="/chatbot-whatsapp/">Chatbot</a><a href="/crm-whatsapp/">CRM</a><a href="/atendimento-multicanal/">Multicanal</a><a href="/planos/">Planos</a><a href="/#faq">FAQ</a><a href="/informacoes-oficiais/">Informações oficiais</a><a class="site-client" href="https://meu.zapsim.app/" target="_blank" rel="noopener">Área do Cliente</a></nav><details class="site-menu"><summary>Menu</summary><nav class="site-navigation" aria-label="Navegação móvel"><a href="/#funcionalidades">Funcionalidades</a><a href="/chatbot-whatsapp/">Chatbot</a><a href="/crm-whatsapp/">CRM</a><a href="/atendimento-multicanal/">Multicanal</a><a href="/planos/">Planos</a><a href="/#faq">FAQ</a><a href="/informacoes-oficiais/">Informações oficiais</a><a class="site-client" href="https://meu.zapsim.app/" target="_blank" rel="noopener">Área do Cliente</a></nav></details></div></header>
 
     <!-- Hero Section (Reduzida) -->
     <section class="bg-green-dark text-white relative overflow-hidden" style="padding: 60px 0;">
@@ -336,7 +310,7 @@
                     Automatize seu atendimento sem parecer um robô, coloque um toque humano em cada conversa com seu cliente.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#planos" class="btn-primary text-base">
+                    <a href="/planos/" class="btn-primary text-base">
                         <i class="fas fa-rocket mr-2"></i>Começar Agora
                     </a>
                     <a href="https://wa.me/552731901980" target="_blank" class="btn-outline text-base">
@@ -355,7 +329,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">Múltiplos Canais de <span style="color: #25D366;">Atendimento</span></h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">Gerencie WhatsApp, Instagram, Facebook, Telegram e Email em um único inbox com chatbots e multi-atendimento.</p>
             </div>
-            
+
             <div class="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto mt-10">
                 <!-- WhatsApp -->
                 <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
@@ -365,7 +339,7 @@
                     <h4 class="font-bold text-gray-800 text-sm mb-1">WhatsApp</h4>
                     <p class="text-xs text-gray-500">Oficial + QR-Code</p>
                 </div>
-                
+
                 <!-- Instagram -->
                 <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
                     <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
@@ -374,7 +348,7 @@
                     <h4 class="font-bold text-gray-800 text-sm mb-1">Instagram</h4>
                     <p class="text-xs text-gray-500">Direct Messages</p>
                 </div>
-                
+
                 <!-- Facebook Messenger -->
                 <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
                     <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
@@ -383,7 +357,7 @@
                     <h4 class="font-bold text-gray-800 text-sm mb-1">Messenger</h4>
                     <p class="text-xs text-gray-500">Facebook Chat</p>
                 </div>
-                
+
                 <!-- Telegram -->
                 <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
                     <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-sky-400 to-sky-600 rounded-full flex items-center justify-center">
@@ -392,7 +366,7 @@
                     <h4 class="font-bold text-gray-800 text-sm mb-1">Telegram</h4>
                     <p class="text-xs text-gray-500">Mensagens + Bots</p>
                 </div>
-                
+
                 <!-- Email -->
                 <div class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2">
                     <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-red-500 to-orange-600 rounded-full flex items-center justify-center">
@@ -402,7 +376,7 @@
                     <p class="text-xs text-gray-500">Integrado</p>
                 </div>
             </div>
-            
+
             <div class="text-center mt-10">
                 <p class="text-sm text-gray-600"><strong>🤖 Chatbots Inteligentes</strong> + <strong>👥 Multi-Atendimento</strong> + <strong>📊 CRM Integrado</strong></p>
             </div>
@@ -416,27 +390,27 @@
                 <h2 class="text-green-800">Funcionalidades do ZapSim</h2>
                 <p class="text-lg text-gray-600">Utilize todos os nossos recursos Premium em poucos minutos</p>
             </div>
-            
+
             <div class="grid md:grid-cols-3 gap-6 mb-12">
                 <div class="card text-center">
                     <img src="icon-bot.png" alt="Atendimento Automático" class="w-16 h-16 mx-auto mb-4">
                     <h3 class="text-xl font-bold mb-3 text-green-800">Atendimento Automático</h3>
                     <p class="text-gray-600">Respostas personalizadas que refletem sua abordagem profissional.</p>
                 </div>
-                
+
                 <div class="card text-center">
                     <img src="icon-contact.png" alt="Gestão de Agendamentos" class="w-16 h-16 mx-auto mb-4">
                     <h3 class="text-xl font-bold mb-3 text-green-800">Gestão de Agendamentos</h3>
                     <p class="text-gray-600">Agendamento simplificado e lembretes automáticos.</p>
                 </div>
-                
+
                 <div class="card text-center">
                     <img src="icon-group.png" alt="Chatbot Inteligente" class="w-16 h-16 mx-auto mb-4">
                     <h3 class="text-xl font-bold mb-3 text-green-800">Chatbot Inteligente</h3>
                     <p class="text-gray-600">Respostas automáticas com transferência para humano quando necessário.</p>
                 </div>
             </div>
-            
+
             <!-- Mini Cards de Funcionalidades Extras - Interativos -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                 <details class="mini-card">
@@ -449,7 +423,7 @@
                     </summary>
                     <p>Vários atendentes simultâneos utilizando o mesmo número de WhatsApp, com distribuição inteligente de conversas.</p>
                 </details>
-                
+
                 <details class="mini-card">
                     <summary>
                         <div class="flex items-center">
@@ -460,7 +434,7 @@
                     </summary>
                     <p>Integre com agendas para agendamento de horários e serviços, com inteligência artificial para otimizar processos.</p>
                 </details>
-                
+
                 <details class="mini-card">
                     <summary>
                         <div class="flex items-center">
@@ -471,7 +445,7 @@
                     </summary>
                     <p>Relatórios completos de atendimentos e painéis de desempenho para acompanhar métricas e resultados.</p>
                 </details>
-                
+
                 <details class="mini-card">
                     <summary>
                         <div class="flex items-center">
@@ -482,7 +456,7 @@
                     </summary>
                     <p>Organização visual dos atendimentos e tarefas em painel estilo Trello, com TodoList integrado.</p>
                 </details>
-                
+
                 <details class="mini-card">
                     <summary>
                         <div class="flex items-center">
@@ -493,7 +467,7 @@
                     </summary>
                     <p>Manutenção de padrões elevados de qualidade em cada interação, garantindo consistência no atendimento.</p>
                 </details>
-                
+
                 <details class="mini-card">
                     <summary>
                         <div class="flex items-center">
@@ -504,7 +478,7 @@
                     </summary>
                     <p>Configuração de horários de atendimento e disponibilidade dos atendentes, com mensagens automáticas fora do expediente.</p>
                 </details>
-                
+
                 <details class="mini-card">
                     <summary>
                         <div class="flex items-center">
@@ -515,7 +489,7 @@
                     </summary>
                     <p>Gestão de atendimentos por diferentes setores e departamentos, com hierarquia de atendentes e transferências.</p>
                 </details>
-                
+
                 <details class="mini-card">
                     <summary>
                         <div class="flex items-center">
@@ -526,7 +500,7 @@
                     </summary>
                     <p>Acesso a todas as interações, incluindo mensagens apagadas, garantindo que nenhuma informação seja perdida.</p>
                 </details>
-                
+
                 <details class="mini-card">
                     <summary>
                         <div class="flex items-center">
@@ -548,7 +522,7 @@
                 <div>
                     <img src="porqueescolher.webp" alt="Por que Escolher o ZapSim" class="rounded-2xl shadow-2xl" loading="lazy">
                 </div>
-                
+
                 <div>
                     <h2 class="mb-6 text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Por que Escolher o ZapSim?</h2>
                     <ul class="space-y-3 text-base">
@@ -581,8 +555,8 @@
                             <span class="text-white" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.3);"><strong class="font-bold">Múltiplos Números:</strong> Vários números em um painel</span>
                         </li>
                     </ul>
-                    
-                    <a href="#planos" class="btn-primary mt-6 inline-block">
+
+                    <a href="/planos/" class="btn-primary mt-6 inline-block">
                         Ver Planos e Preços
                     </a>
                 </div>
@@ -597,7 +571,7 @@
                 <h2 class="text-green-800">Casos de Sucesso</h2>
                 <p class="text-lg text-gray-600">Veja o que nossos clientes estão dizendo</p>
             </div>
-            
+
             <div class="grid md:grid-cols-4 gap-6">
                 <img src="depo1.jpg" alt="Depoimento 1" class="rounded-xl shadow-lg hover:scale-105 transition" loading="lazy">
                 <img src="depo2.jpg" alt="Depoimento 2" class="rounded-xl shadow-lg hover:scale-105 transition" loading="lazy">
@@ -609,91 +583,10 @@
 
     <!-- Planos e Preços -->
     <section id="planos" class="bg-green-pattern text-white relative">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.4);">Planos e Preços</h2>
-                <p class="text-lg text-white" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">Escolha o plano ideal para o seu negócio</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-                <!-- Plano One -->
-                <div class="pricing-card">
-                    <div class="badge">Mais econômico</div>
-                    <h3 class="text-2xl font-bold mb-3 text-green-800">One</h3>
-                    <div class="text-4xl font-bold mb-4 text-green-600">
-                        R$ 89<span class="text-lg">/mês</span>
-                    </div>
-                    <ul class="space-y-2 mb-6 text-gray-700 text-sm">
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>1 Usuário</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>1 Canal WhatsApp</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Respostas Automáticas</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Agendamento de Mensagens</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Chatbot Básico</li>
-                    </ul>
-                    <a href="https://www.asaas.com/c/vnkxcjfbba1yh9t7" target="_blank" class="btn-primary w-full text-center block">
-                        Assinar Plano One
-                    </a>
-                </div>
-
-                <!-- Plano Micro -->
-                <div class="pricing-card">
-                    <h3 class="text-2xl font-bold mb-3 text-green-800">Micro</h3>
-                    <div class="text-4xl font-bold mb-4 text-green-600">
-                        R$ 189<span class="text-lg">/mês</span>
-                    </div>
-                    <ul class="space-y-2 mb-6 text-gray-700 text-sm">
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>2 Usuários</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>2 Canais WhatsApp</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>2 Contas Telegram</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Tudo do Plano One</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>+ Integração Instagram</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>+ Integração Telegram</li>
-                    </ul>
-                    <a href="https://www.asaas.com/c/iqo97fbu2wspfqzp" target="_blank" class="btn-primary w-full text-center block">
-                        Assinar Plano Micro
-                    </a>
-                </div>
-
-                <!-- Plano Plus -->
-                <div class="pricing-card featured">
-                    <div class="badge">Mais vendido</div>
-                    <h3 class="text-2xl font-bold mb-3 text-green-800">Plus</h3>
-                    <div class="text-4xl font-bold mb-4 text-green-600">
-                        R$ 274<span class="text-lg">/mês</span>
-                    </div>
-                    <ul class="space-y-2 mb-6 text-gray-700 text-sm">
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>3 Usuários</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>3 Canais WhatsApp</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>3 Contas Telegram</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Tudo do Plano Micro</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>+ Integração Facebook</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>+ Integração Email</li>
-                    </ul>
-                    <a href="https://www.asaas.com/c/78lhclvhhb0yjxoo" target="_blank" class="btn-primary w-full text-center block">
-                        Assinar Plano Plus
-                    </a>
-                </div>
-
-                <!-- Plano Elite -->
-                <div class="pricing-card">
-                    <div class="badge">Topo de linha</div>
-                    <h3 class="text-2xl font-bold mb-3 text-green-800">Elite</h3>
-                    <div class="text-4xl font-bold mb-4 text-green-600">
-                        R$ 399<span class="text-lg">/mês</span>
-                    </div>
-                    <ul class="space-y-2 mb-6 text-gray-700 text-sm">
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>5 Usuários</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>5 Canais WhatsApp</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>5 Contas Telegram</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Tudo do Plano Plus</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>+ Suporte Prioritário</li>
-                        <li><i class="fas fa-check text-green-600 mr-2"></i>Gestão múltiplas contas</li>
-                    </ul>
-                    <a href="https://www.asaas.com/c/ga4gpo8thm4l269l" target="_blank" class="btn-primary w-full text-center block">
-                        Assinar Plano Elite
-                    </a>
-                </div>
-            </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-white">Um plano para o seu negócio</h2>
+            <p class="text-lg text-white mb-6">Atendimento e automação a partir de R$ 89/mês. Compare usuários, canais e recursos para escolher seu plano.</p>
+            <a href="/planos/" class="btn-primary">Ver planos e preços</a>
         </div>
     </section>
 
@@ -705,7 +598,7 @@
                     <!-- Selo 30 Dias -->
                     <img src="selo-30dias.png" alt="30 Dias de Garantia" class="w-52 mx-auto md:mx-0 drop-shadow-2xl">
                 </div>
-                
+
                 <div>
                     <h2 class="text-green-900 mb-4 text-3xl font-bold">Confiança e Garantia</h2>
                     <p class="text-green-900 mb-3 text-base leading-relaxed">
@@ -725,48 +618,48 @@
             <div class="text-center mb-12">
                 <h2 class="text-green-800">DÚVIDAS FREQUENTES</h2>
             </div>
-            
+
             <div class="max-w-3xl mx-auto space-y-3">
                 <details class="card cursor-pointer">
                     <summary class="font-bold text-base">O que é o ZapSim?</summary>
                     <p class="mt-3 text-gray-600 text-sm">Ferramenta avançada que automatiza o atendimento pelo WhatsApp, com integração a CRM e outros sistemas.</p>
                 </details>
-                
+
                 <details class="card cursor-pointer">
                     <summary class="font-bold text-base">Como o ZapSim pode ajudar meu negócio?</summary>
                     <p class="mt-3 text-gray-600 text-sm">Automatiza respostas, agenda mensagens e organiza conversas, permitindo foco nas atividades operacionais.</p>
                 </details>
-                
+
                 <details class="card cursor-pointer">
                     <summary class="font-bold text-base">O ZapSim integra com outras ferramentas?</summary>
                     <p class="mt-3 text-gray-600 text-sm">Sim! ChatGPT, Typebot, Dialogflow, N8N, Make, Zapier e outras plataformas com API/Webhook.</p>
                 </details>
-                
+
                 <details class="card cursor-pointer">
                     <summary class="font-bold text-base">O ZapSim tem respostas rápidas e atalhos?</summary>
                     <p class="mt-3 text-gray-600 text-sm">Sim! Criação de atalhos para mensagens de texto, imagens e áudios frequentemente utilizados, economizando tempo no atendimento.</p>
                 </details>
-                
+
                 <details class="card cursor-pointer">
                     <summary class="font-bold text-base">Posso organizar conversas com etiquetas?</summary>
                     <p class="mt-3 text-gray-600 text-sm">Sim! Organização de conversas com etiquetas personalizadas, facilitando a gestão e busca de atendimentos.</p>
                 </details>
-                
+
                 <details class="card cursor-pointer">
                     <summary class="font-bold text-base">O ZapSim permite transferência de atendimentos?</summary>
                     <p class="mt-3 text-gray-600 text-sm">Sim! Redirecionamento de conversas entre operadores ou setores, com histórico preservado e notificações automáticas.</p>
                 </details>
-                
+
                 <details class="card cursor-pointer">
                     <summary class="font-bold text-base">Posso criar carteiras de clientes por atendente?</summary>
                     <p class="mt-3 text-gray-600 text-sm">Sim! Cada atendente pode gerenciar sua própria carteira de clientes, com organização e acompanhamento personalizado.</p>
                 </details>
-                
+
                 <details class="card cursor-pointer">
                     <summary class="font-bold text-base">Posso ver o ZapSim funcionando antes de assinar?</summary>
                     <p class="mt-3 text-gray-600 text-sm">Sim! Fale com um consultor pelo WhatsApp e agende uma demonstração do ZapSim no seu negócio.</p>
                 </details>
-                
+
                 <details class="card cursor-pointer">
                     <summary class="font-bold text-base">É seguro usar o ZapSim?</summary>
                     <p class="mt-3 text-gray-600 text-sm">Sim! Utilizamos <strong>criptografia ponta a ponta</strong> e seguimos as melhores práticas de segurança para proteger todas as suas informações e conversas.</p>
@@ -783,7 +676,7 @@
                 Automatize seu atendimento mantendo o toque humano em cada interação. Escolha o plano ideal e transforme a forma como você se conecta com seus clientes.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#planos" class="btn-primary bg-white text-green-800 hover:bg-gray-100">
+                <a href="/planos/" class="btn-primary bg-white text-green-800 hover:bg-gray-100">
                     <i class="fas fa-rocket mr-2"></i>Ver Planos
                 </a>
                 <a href="https://wa.me/552731901980" target="_blank" class="btn-outline">
@@ -798,10 +691,10 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-6 mb-6">
                 <div>
-                    <img src="logo.png" alt="ZapSim" class="h-10 mb-3">
+                    <a href="/" class="site-footer-brand"><img src="/brand/zapsim-horizontal.png" alt="ZapSim" width="1080" height="350"></a>
                     <p class="text-sm">Seu melhor parceiro para atendimento pelo WhatsApp com toque humano.</p>
                 </div>
-                
+
                 <div>
                     <h4 class="font-bold text-white mb-3">Links Rápidos</h4>
                     <ul class="space-y-2 text-sm">
@@ -816,7 +709,7 @@
                         <li><a href="https://meu.zapsim.app" class="hover:text-green-400">Área do Cliente</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="font-bold text-white mb-3">Contato</h4>
                     <p class="text-sm mb-2">
@@ -825,7 +718,7 @@
                     </p>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 pt-6 text-center text-sm">
                 <p>ZapSim – Todos os direitos reservados 2024-2026</p>
                 <p class="mt-2 text-xs text-gray-500">Site desenvolvido pela <a href="https://sucesso.net.br" target="_blank" class="text-green-400 hover:text-green-300 transition">Agência do Sucesso Empresarial</a></p>
@@ -844,7 +737,7 @@
                 }
             });
         });
-        
+
         // Animar chevron dos mini cards
         document.querySelectorAll('.mini-card').forEach(card => {
             card.addEventListener('toggle', function() {
