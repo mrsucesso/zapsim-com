@@ -47,7 +47,7 @@
   panel = document.createElement('section');
   panel.className = 'zs-measure-panel';
   panel.setAttribute('aria-label', 'Preferências de medição de anúncios');
-  panel.innerHTML = '<p>Podemos usar o Pixel da Meta para medir visitas e cliques de assinatura e melhorar nossos anúncios? Ele pode usar cookies e compartilhar dados de navegação com a Meta. Sua escolha não impede o uso do site.</p><button type="button">Permitir medição</button><button type="button">Agora não</button>';
+  panel.innerHTML = '<p>Podemos usar o Pixel da Meta para medir visitas e cliques de assinatura e melhorar nossos anúncios? Ele pode usar cookies e compartilhar dados de navegação com a Meta. Sua escolha não impede o uso do site. Saiba mais na <a href="/privacidade/">Política de Privacidade</a> e na <a href="/cookies/">Política de Cookies</a>.</p><button type="button">Permitir medição</button><button type="button">Agora não</button>';
   var buttons = panel.querySelectorAll('button');
   buttons[0].addEventListener('click', function () {
     save('yes');
@@ -69,6 +69,10 @@
   document.body.appendChild(settings);
   panel.hidden = consent === 'yes' || consent === 'no';
   if (consent === 'yes') startMeasurement();
+  document.addEventListener('click', function (event) {
+    var trigger = event.target.closest && event.target.closest('[data-open-cookie-preferences]');
+    if (trigger) showPanel();
+  });
   document.addEventListener('click', function (event) {
     if (consent !== 'yes' || !window.fbq) return;
     var link = event.target.closest && event.target.closest('a[href]');
