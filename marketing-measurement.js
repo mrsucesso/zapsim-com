@@ -32,6 +32,17 @@
     window.fbq('consent', 'grant');
     window.fbq('init', pixelId);
     window.fbq('track', 'PageView');
+    if (!window.__zapsimGa4Loaded) {
+      window.__zapsimGa4Loaded = true;
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-P59D9YGVX2';
+      document.head.appendChild(gaScript);
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-P59D9YGVX2', { anonymize_ip: true });
+    }
     if (location.pathname === '/planos/' || location.hash === '#planos') {
       window.fbq('track', 'ViewContent', { content_name: 'Planos ZapSim' });
     }
